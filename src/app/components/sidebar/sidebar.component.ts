@@ -29,7 +29,7 @@ export class SidebarComponent implements OnInit {
   
 
 gettingDataFunctin(){
-  this.service.getJSON().subscribe(data=>{console.log(data,".....res");
+  this.service.getJSON().subscribe(data=>{
   if(data){
     this.setup=data.data;
     this.userlist=data.userList;
@@ -46,10 +46,5 @@ signOut(){
   this.route.navigate(['/login'])
 }
 
-  // addActive(index){
-  //   if(this.setup[index].id === index){
-  //     this.activeClass = true;
-  //   }
-  // }
 
 }

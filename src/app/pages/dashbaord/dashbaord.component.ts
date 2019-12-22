@@ -14,9 +14,6 @@ export class DashbaordComponent implements OnInit {
 responseFormData:any;
 
   ngOnInit() {
-    // localStorage.getItem("id");
-    // console.log(this.service.getLoginFOrmData())
-// console.log(localStorage.getItem("id"));
     if(localStorage.getItem("id") === null) return this.route.navigate(['/login']);
     return this.responseFormData=this.service.getLoginFOrmData;
   }

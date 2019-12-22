@@ -18,8 +18,6 @@ pricingData(){
   this.services.getJSON().subscribe(data=>{console.log(data,".....res");
   if(data){
     this.pricing=data.dataList;
-    console.log("pricing--------------------",this.pricing);
-    
   }else{
     console.log("error");
   }

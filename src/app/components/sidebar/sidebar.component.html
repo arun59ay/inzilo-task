@@ -27,7 +27,7 @@
     <div class="card my-2 p-0 bg-secondary">
         <ul class="list-group list-group-flush">
             <li class="list-group-item cursor-pointer list-group-container text-white ft-12 d-flex text-capitalize" 
-             *ngFor="let list of setup, let i = index" [ngClass]="{'active': activeClass}" (click)="addActive(i)">
+             *ngFor="let list of setup, let i = index" [ngClass]="{'active': activeClass}" >
                 <img [src]='list.url' width="16" height="16"/>
                 <div class="ml-4">{{list.name}}</div>
             </li>

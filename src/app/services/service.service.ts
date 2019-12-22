@@ -10,7 +10,6 @@ export class ServiceService {
 
   constructor(private http: HttpClient) { 
       this.getJSON().subscribe(data => {
-        console.log(data);
     });
   }
 
@@ -23,7 +22,6 @@ loginFormSubmit:any;
 
 //------login data or signup data-----//
 setFormData(data){
-console.log(data,"......data");
 this.loginFormSubmit=data;
 }
 

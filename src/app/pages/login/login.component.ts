@@ -44,7 +44,6 @@ export class LoginComponent implements OnInit {
     this.signUpTab = false;
   }
   onClickSignUPButton() {
-    console.log("coming in on click signup");
     this.signUpTab = true;
     this.loginTab = false;
   }
@@ -90,13 +89,8 @@ export class LoginComponent implements OnInit {
       this.router.navigate(['/dashboard']);
     } else {
       this.errorCredientialFlag = true;
-      console.log('error credential', this.errorCredientialFlag );
-      // alert('invalid userName or Password');
     }
   }
 
-  clickSubmit(){
-    console.log(this.registerForm, "hsdhsdfk");
-    
-  }
+
 }

@@ -1,0 +1,50 @@
+<div class="w-100 h-100">
+    <div class="d-flex align-items-center pricing-card-header">
+        <img src="../../../assets/images/dollar-symbol.png" width="15" height="15" />
+        <div class="ft-14 fw-500 ml-2 text-capitalize">selet pricing option </div>
+    </div>
+    <div class="pricing-card-body">
+        <div class="p-2">
+            <table class="table table-bordered">
+                <thead class="thead-light">
+                    <tr>
+                        <th scope="col" class="ft-14">Name</th>
+                        <th scope="col" class="ft-14">Saving</th>
+                        <th scope="col" class="ft-14">Residuals</th>
+                        <th scope="col" class="ft-14">Rate</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="ft-14 table-list" *ngFor="let list of pricing">
+                        <td>{{list.name}}</td>
+                        <td>{{list.saving}}</td>
+                        <td>{{list.residuals}}</td>
+                        <td>{{list.rate}}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="d-flex text-capitalize">
+                <div class="ft-14 fw-500 mr-2">non-monthly fees</div>
+                <button class="btn btn-primary custom-btn ft-12">Add</button>
+            </div>
+        </div>
+        <div class="detail-header p-2">
+            Final Proposal Details Below
+        </div>
+        <div class="d-flex align-items-center text-capitalize p-2">
+            <div class="ft-14 fw-500 mr-2">Proposal</div>
+            <button class="btn btn-primary custom-btn ft-12">Update</button>
+            <img src="../../../assets/images/help-web-button.png" width="15" height="15" class="mx-2"/>
+        </div>
+        <div class="pb-1">
+            <table class="table proposal-table text-center">
+                <tr>
+                    <td>Generated</td>
+                    <td>3/09/2016</td>
+                    <td>Pricing</td>
+                    <td>6 Tiered w/Reg Debit</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
